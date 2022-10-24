@@ -45,7 +45,7 @@ There are no restrictions on how reservations are stored as as long as system co
 * Docker [https://docs.docker.com/install/]
 * Docker Compose [https://docs.docker.com/compose/install/]
 
-###Run the application
+### Run the application
 
 We must run the docker-compose to start the database(path: "../configuration"):
 
@@ -66,7 +66,7 @@ gradle bootRun
 
 This application uses JPA + Postgres, spring-boot and mockito. Some unit tests are available in this project.
 
-###REST API design
+### REST API design
 
 There are six operations are exposed:
 
