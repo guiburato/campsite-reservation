@@ -2,11 +2,9 @@ package Backend.Tech.Challenge.upgrade.service;
 
 import Backend.Tech.Challenge.upgrade.dto.BookingDto;
 import Backend.Tech.Challenge.upgrade.dto.BookingForm;
-import Backend.Tech.Challenge.upgrade.repository.entity.BookingEntity;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 
 public interface BookingService {
 
