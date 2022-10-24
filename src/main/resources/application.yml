@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: campsite-reservation
+  datasource:
+    url: jdbc:postgresql://localhost:12345/campsite
+    username: sa
+    password: sa
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: drop
+        jdbc:
+          time_zone: UTC
+    generate-ddl: true
+
+server:
+  port: 8080
+  error:
+    includeStacktrace: ALWAYS
+
+logging:
+  level:
+    web: INFO
+    org.hibernate.SQL: DEBUG
+    org.springframework.orm.jpa: DEBUG
+
+variables:
+  maxDaysBookingDuration: 3
+  minDaysBooking: 1
+  maxDaysBooking: 31

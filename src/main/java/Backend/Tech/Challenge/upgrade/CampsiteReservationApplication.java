@@ -1,7 +1,8 @@
-package Backend.Tech.Challenge.Upgrade;
+package Backend.Tech.Challenge.upgrade;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication
 public class CampsiteReservationApplication {

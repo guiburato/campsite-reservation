@@ -1,0 +1,31 @@
+version: '3.3'
+services:
+  db:
+    image: postgres:11.2
+    ports:
+      - 12345:5432
+    volumes:
+      - ../volume:/var/lib/postgresql
+    environment:
+      - POSTGRES_USER=sa
+      - POSTGRES_PASSWORD=sa
+      - POSTGRES_DB=campsite
+    networks:
+      - development-network
+  app:
+    image: dpage/pgadmin4
+    links:
+      - db:db
+    ports:
+      - 81:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "guiburato@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "gui123"
+    depends_on:
+      - db
+    networks:
+      - development-network
+
+networks:
+  development-network:
+    driver: bridge

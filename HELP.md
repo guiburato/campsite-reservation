@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'Back-end Tech Challenge - Upgrade' is invalid and this project uses 'Backend.Tech.Challenge.Upgrade' instead.
+* The original package name 'Back-end Tech Challenge - Upgrade' is invalid and this project uses 'Backend.Tech.Challenge.upgrade' instead.
 
 # Getting Started
 
